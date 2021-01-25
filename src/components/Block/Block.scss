@@ -3,13 +3,9 @@
   height: 350px;
   width: 350px;
   background-size: cover;
-  color: white;
-  text-shadow: 1px 1px black;
-  font-family: "Press Start 2P";
   font-size: 16px;
   border: 1px dotted black;
-  margin: 30px;
-
+  margin: 30px 50px;
   h1 {
     font-size: 24px;
     margin: 0;
@@ -41,37 +37,34 @@
     border: none;
     color: white;
     font-family: "Press Start 2P";
-    // border: 1px solid lightgray;
     font-size: 10px;
     height: fit-content;
-  }
-
-  .one-up-button {
     display: flex;
-    background-color: white;
     align-items: center;
-    color: black;
-    .one-up {
-      background-image: url("../../images/one-up.png");
-      background-size: cover;
+    .app__icon {
       height: 16px;
-      width: 16px;
-      margin-right: 5px;
+      width: 14px;
+      margin-left: 10px;
     }
   }
+  .button.complete {
+    background: green;
+  }
+
   .complete-button {
     width: fit-content;
     background: red;
     align-self: flex-end;
   }
 
-  //   .title {
-  //   }
-
   .hours {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 0 10px;
+    .app__icon {
+      margin-right: 20px;
+    }
   }
 }
 

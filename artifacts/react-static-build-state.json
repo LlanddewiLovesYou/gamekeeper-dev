@@ -1,0 +1,66 @@
+{
+  "prefetchRate": 5,
+  "maxThreads": null,
+  "disableRoutePrefixing": false,
+  "outputFileRate": 100,
+  "extensions": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".tsx"
+  ],
+  "minLoadTime": 200,
+  "disablePreload": false,
+  "disableRuntime": false,
+  "preloadPollInterval": 300,
+  "productionSourceMaps": false,
+  "silent": false,
+  "entry": "/Users/stride-admin/development/gamekeeper/src/index.tsx",
+  "plugins": [
+    "react-static-plugin-typescript",
+    "react-static-plugin-sass",
+    [
+      "/Users/stride-admin/development/gamekeeper/node_modules/react-static-plugin-source-filesystem/node.api.js",
+      {
+        "location": "/Users/stride-admin/development/gamekeeper/src/pages"
+      }
+    ],
+    "/Users/stride-admin/development/gamekeeper/node_modules/react-static-plugin-reach-router/browser.api.js",
+    "/Users/stride-admin/development/gamekeeper/node_modules/react-static-plugin-sitemap/dist/node.api.js",
+    "/Users/stride-admin/development/gamekeeper"
+  ],
+  "paths": {
+    "ROOT": "/Users/stride-admin/development/gamekeeper",
+    "SRC": "/Users/stride-admin/development/gamekeeper/src",
+    "DIST": "/Users/stride-admin/development/gamekeeper/dist",
+    "ASSETS": "/Users/stride-admin/development/gamekeeper/dist",
+    "PLUGINS": "/Users/stride-admin/development/gamekeeper/plugins",
+    "TEMP": "/Users/stride-admin/development/gamekeeper/tmp",
+    "ARTIFACTS": "/Users/stride-admin/development/gamekeeper/artifacts",
+    "PUBLIC": "/Users/stride-admin/development/gamekeeper/public",
+    "NODE_MODULES": "/Users/stride-admin/development/gamekeeper/node_modules",
+    "EXCLUDE_MODULES": "/Users/stride-admin/development/gamekeeper/node_modules",
+    "PACKAGE": "/Users/stride-admin/development/gamekeeper/package.json",
+    "HTML_TEMPLATE": "/Users/stride-admin/development/gamekeeper/dist/index.html",
+    "STATIC_DATA": "/Users/stride-admin/development/gamekeeper/dist/staticData"
+  },
+  "siteRoot": "/",
+  "basePath": "",
+  "publicPath": "/",
+  "assetsPath": "",
+  "extractCssChunks": false,
+  "inlineCss": false,
+  "babelExcludes": [],
+  "devServer": {
+    "host": "localhost",
+    "port": 3000
+  },
+  "terser": {
+    "terserOptions": {
+      "mangle": {},
+      "parse": {},
+      "compress": {},
+      "output": {}
+    }
+  }
+}
